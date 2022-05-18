@@ -1,0 +1,52 @@
+body {
+    margin: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.me1 {
+    width: 150px;
+    animation: slideMe 1s ease-in;
+}
+
+.card {
+    justify-content: space-around;
+    padding: 20px;
+    display: flex;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #FFFECB;
+    color: #423E3B;
+    border-bottom: 8px solid #3E5C76;
+    box-shadow: 5px 2px 2px black;
+}
+
+.dottedBorder1{
+    border: 1px blue dotted;
+}
+
+@keyframes slideMe {
+    0% {
+        transform: skewX(20deg) translateY(-500px);
+        opacity: 0;
+    }
+    60% {
+       transform: translateX(0px); 
+    }
+    62% { 
+        transform: skewX(0deg) translateY(30px);
+    }
+    70% {
+        transform: skew(-20deg);
+        opacity: 1;
+    }
+    80% {
+        transform: skew(0deg) translate(0);
+    }
+    90% {
+        transform: skew(-5deg);
+    }
+    100% {
+        transform: skew(0deg);
+    }
+}
